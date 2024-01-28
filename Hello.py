@@ -3,6 +3,16 @@ from datetime import datetime
 
 def main():
     st.title("Time Log System")
+    
+    name = st.text_input("Name")
+    email = st.text_input("Email")
+    task = st.text_input("Task")
+    Description = st.text_area("Description")
+
+    st.write(name)
+    st.write(email)
+    st.write(task)
+    st.write(Description)
 
     Start = st.button("Start Time") 
     End = st.button("End Time")
