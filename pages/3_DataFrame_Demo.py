@@ -21,7 +21,7 @@ import streamlit as st
 from streamlit.hello.utils import show_code
 
 
-def data_frame_demo():
+'''def data_frame_demo():
     @st.cache_data
     def get_UN_data():
         AWS_BUCKET_URL = "https://streamlit-demo-data.s3-us-west-2.amazonaws.com"
@@ -75,3 +75,4 @@ st.write(
 data_frame_demo()
 
 show_code(data_frame_demo)
+'''

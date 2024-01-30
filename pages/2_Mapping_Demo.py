@@ -21,7 +21,7 @@ import streamlit as st
 from streamlit.hello.utils import show_code
 
 
-def mapping_demo():
+'''def mapping_demo():
     @st.cache_data
     def from_data_file(filename):
         url = (
@@ -115,3 +115,4 @@ to display geospatial data."""
 mapping_demo()
 
 show_code(mapping_demo)
+'''

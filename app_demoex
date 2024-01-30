@@ -1,5 +1,0 @@
-import streamlit as st
-name = st.text_input("Name")
-email = st.text_input("Email")
-task = st.text_input("Task")
-Description = st.text_area("Description")

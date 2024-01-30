@@ -20,7 +20,7 @@ import streamlit as st
 from streamlit.hello.utils import show_code
 
 
-def animation_demo() -> None:
+'''def animation_demo() -> None:
 
     # Interactive Streamlit elements, like these sliders, return their value.
     # This gives you an extremely simple interaction model.
@@ -82,3 +82,4 @@ to tune different parameters."""
 animation_demo()
 
 show_code(animation_demo)
+''''
