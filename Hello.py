@@ -1,6 +1,7 @@
 import streamlit as st
 from datetime import datetime
 
+
 def main():
     st.title("Time Log System")
     
@@ -20,14 +21,17 @@ def main():
 
     if Start:
         st.session_state.start_timestamp = datetime.now()
-        st.success(f"Start time set to {st.session_state.start_timestamp}")
+        formatestart_time = st.session_state.start_timestamp.strftime('%H:%M')
+        st.sidebar.write("Start time:",formatestart_time)
+       
 
     if End:
         if "start_timestamp" in st.session_state:
             end_timestamp = datetime.now()
-            time_difference = end_timestamp - st.session_state.start_timestamp
-            st.success(f"End time set to {end_timestamp}")
-            st.info(f"Time difference: {time_difference}")
+            formateend_time = end_timestamp.strftime('%H:%M')
+            st.sidebar.write("End time :",formateend_time)
+            
+            
         else:
             st.warning("Please set the start time first.")
 

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import time
+'''import time
 
 import numpy as np
 
@@ -20,7 +20,7 @@ import streamlit as st
 from streamlit.hello.utils import show_code
 
 
-'''def plotting_demo():
+def plotting_demo():
     progress_bar = st.sidebar.progress(0)
     status_text = st.sidebar.empty()
     last_rows = np.random.randn(1, 1)
